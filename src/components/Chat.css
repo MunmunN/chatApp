@@ -1,0 +1,43 @@
+.outerContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: aqua;
+
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 8px;
+    flex-direction: column;
+    height: 60%;
+    width:35%;
+
+
+}
+/* styling for Input form */
+.form{
+    display: flex;
+    border-top: 2px solid whitesmoke;
+
+}
+.input{
+    border: none;
+    border-radius: 0;
+    padding: 5%;
+    width:80%;
+    font-size: 20px;
+}
+.input:focus{
+    outline: none;
+}
+.sendButton{
+    background-color: rgb(26, 143, 182);
+    width:20%;
+    text-transform: uppercase;
+    border: none;
+    color:white;
+    padding: 20px;
+}

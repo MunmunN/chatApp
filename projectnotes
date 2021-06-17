@@ -1,0 +1,52 @@
+******client******
+
+client:
+mkdir client
+cd clientcreate-react-app ./
+npm install --save react-router-dom socket.io-client react-scroll-to-bottom react-emoji query-string
+delete everything from the src folder.
+create App.js and index.js 
+
+
+******server****
+mkdir server
+cd server
+npm init
+npm install --save cors nodemon express socket.io
+
+********************Deploying server on Heroku*************
+Add cors into index.js
+Add app.use(cors())
+Create the new app inside your heroku account.
+create a .gitignore file and write /node_modules
+create Procfile and add web: node index.js
+remove nodemon from line 7 in package.json and write start: 'node index.js'
+open terminal for server and type: heroku login
+git init
+heroku git:clone -a reactchatapplicationmunmun
+git add .
+ git commit -am "make it better"
+$git push heroku master
+
+
+*******Deploy client on netlify*****************
+write socket=io('https://reactchatapplicationmunmun.herokuapp.com/')
+download netlify using npm install netlify-cli -g
+netlify login
+npm run build
+netlify deploy
+
+
+https://medium.com/better-programming/creating-a-simple-app-with-react-js-f6aa88998952
+https://www.w3schools.com/react/react_jsx.asp
+https://www.tutorialspoint.com/reactjs/reactjs_props_overview.htm
+https://medium.com/@Zwenza/functional-vs-class-components-in-react-231e3fbd7108
+https://programmingwithmosh.com/react/react-functional-components/
+
+
+
+
+
+
+
+

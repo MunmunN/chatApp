@@ -1,0 +1,26 @@
+.InfoBar{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(26, 143, 182);
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    
+}
+
+.leftContainer{
+    display:flex;
+    align-items: center;
+    margin-left: 5%;
+    color:white;
+}
+.rightContainer{
+    display:flex;
+    align-items: center;
+    margin-right: 5%;
+    
+
+}
+.onLineIconImage{
+    margin-right: 5%;
+}
